@@ -1,0 +1,28 @@
+{
+    "name": "koaProject",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "nodemon ./bin/www",
+        "dev": "pm2 start ecosystem.config.js --env dev",
+        "test": "pm2 start ecosystem.config.js --env test",
+        "pro": "pm2  start ecosystem.config.js --env pro",
+        "logs": "pm2 logs",
+        "stop": "pm2 stop ecosystem.config.js"
+    },
+    "dependencies": {
+        "jsonwebtoken": "^8.5.1",
+        "koa-bodyparser": "^4.3.0",
+        "koa-cors": "^0.0.16",
+        "koa-helmet": "^6.1.0",
+        "koa-jwt": "^4.0.1",
+        "koa-router": "^10.1.1",
+        "koa-static-cache": "^5.1.4",
+        "koa2": "^2.0.0-alpha.7",
+        "log4js": "^6.3.0",
+        "mysql": "^2.18.1",
+        "pm2": "^5.1.1",
+        "redis": "^3.1.2"
+    }
+}
